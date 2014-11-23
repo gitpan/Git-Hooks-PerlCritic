@@ -1,10 +1,11 @@
 {
    "abstract" : "Perl Critic hooks for git",
    "author" : [
-      "Caleb Cushing <xenoterracide@gmail.com>"
+      "Caleb Cushing <xenoterracide@gmail.com>",
+      "Mikko Koivunalho <mikkoi@cpan.org>"
    ],
    "dynamic_config" : 0,
-   "generated_by" : "Dist::Zilla version 4.300028, CPAN::Meta::Converter version 2.120921",
+   "generated_by" : "Dist::Zilla version 5.025, CPAN::Meta::Converter version 2.142690",
    "license" : [
       "artistic_2"
    ],
@@ -21,29 +22,27 @@
    "prereqs" : {
       "configure" : {
          "requires" : {
-            "ExtUtils::MakeMaker" : "6.30"
+            "ExtUtils::MakeMaker" : "0"
          }
       },
       "develop" : {
          "requires" : {
             "Pod::Coverage::TrustPod" : "0",
+            "Test::CPAN::Changes" : "0.19",
             "Test::CPAN::Meta" : "0",
+            "Test::Kwalitee" : "1.21",
             "Test::Pod" : "1.41",
             "Test::Pod::Coverage" : "1.08",
+            "Test::Spelling" : "0.12",
+            "Test::Synopsis" : "0",
             "version" : "0.9901"
          }
       },
       "runtime" : {
-         "recommends" : {
-            "Path::Class::File" : "0"
-         },
          "requires" : {
             "Carp" : "0",
             "Git::Hooks" : "0",
             "Module::Load" : "0",
-            "Perl::Critic" : "0",
-            "Perl::Critic::Utils" : "0",
-            "Perl::Critic::Violation" : "0",
             "perl" : "5.010",
             "strict" : "0",
             "warnings" : "0"
@@ -51,8 +50,9 @@
       },
       "test" : {
          "requires" : {
-            "File::Find" : "0",
-            "File::Temp" : "0",
+            "File::Spec" : "0",
+            "IO::Handle" : "0",
+            "IPC::Open3" : "0",
             "Test::More" : "0.88"
          }
       }
@@ -60,7 +60,7 @@
    "provides" : {
       "Git::Hooks::PerlCritic" : {
          "file" : "lib/Git/Hooks/PerlCritic.pm",
-         "version" : "0.001000"
+         "version" : "0.001001"
       }
    },
    "release_status" : "stable",
@@ -76,6 +76,6 @@
          "web" : "https://github.com/hostgator/git-hooks-perlcritic"
       }
    },
-   "version" : "0.001000"
+   "version" : "0.001001"
 }
 

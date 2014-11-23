@@ -2,18 +2,20 @@
 abstract: 'Perl Critic hooks for git'
 author:
   - 'Caleb Cushing <xenoterracide@gmail.com>'
+  - 'Mikko Koivunalho <mikkoi@cpan.org>'
 build_requires:
-  File::Find: 0
-  File::Temp: 0
-  Test::More: 0.88
+  File::Spec: '0'
+  IO::Handle: '0'
+  IPC::Open3: '0'
+  Test::More: '0.88'
 configure_requires:
-  ExtUtils::MakeMaker: 6.30
+  ExtUtils::MakeMaker: '0'
 dynamic_config: 0
-generated_by: 'Dist::Zilla version 4.300028, CPAN::Meta::Converter version 2.120921'
+generated_by: 'Dist::Zilla version 5.025, CPAN::Meta::Converter version 2.142690'
 license: artistic_2
 meta-spec:
   url: http://module-build.sourceforge.net/META-spec-v1.4.html
-  version: 1.4
+  version: '1.4'
 name: Git-Hooks-PerlCritic
 no_index:
   file:
@@ -21,21 +23,16 @@ no_index:
 provides:
   Git::Hooks::PerlCritic:
     file: lib/Git/Hooks/PerlCritic.pm
-    version: 0.001000
-recommends:
-  Path::Class::File: 0
+    version: '0.001001'
 requires:
-  Carp: 0
-  Git::Hooks: 0
-  Module::Load: 0
-  Perl::Critic: 0
-  Perl::Critic::Utils: 0
-  Perl::Critic::Violation: 0
-  perl: 5.010
-  strict: 0
-  warnings: 0
+  Carp: '0'
+  Git::Hooks: '0'
+  Module::Load: '0'
+  perl: '5.010'
+  strict: '0'
+  warnings: '0'
 resources:
   bugtracker: https://github.com/hostgator/git-hooks-perlcritic/issues
   homepage: https://metacpan.org/release/Git-Hooks-PerlCritic
   repository: git://github.com/hostgator/git-hooks-perlcritic.git
-version: 0.001000
+version: '0.001001'
